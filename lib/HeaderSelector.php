@@ -1,6 +1,6 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client;
+namespace FicoEXTScoredSimulacion\Client;
 
 use \Exception;
 

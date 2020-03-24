@@ -1,6 +1,6 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Api;
+namespace FicoEXTScoredSimulacion\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -8,12 +8,12 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use FicoEXTScoređSimulacion\Client\ApiException;
-use FicoEXTScoređSimulacion\Client\Configuration;
-use FicoEXTScoređSimulacion\Client\HeaderSelector;
-use FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use FicoEXTScoredSimulacion\Client\ApiException;
+use FicoEXTScoredSimulacion\Client\Configuration;
+use FicoEXTScoredSimulacion\Client\HeaderSelector;
+use FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
-class FicoEXTScoređSimulacionApi
+class FicoEXTScoredSimulacionApi
 {
     
     protected $client;
@@ -45,7 +45,7 @@ class FicoEXTScoređSimulacionApi
     
     public function getReporteWithHttpInfo($x_api_key, $body)
     {
-        $returnType = '\FicoEXTScoređSimulacion\Client\Model\Respuesta';
+        $returnType = '\FicoEXTScoredSimulacion\Client\Model\Respuesta';
         $request = $this->getReporteRequest($x_api_key, $body);
         try {
             $options = $this->createHttpClientOption();
@@ -91,7 +91,7 @@ class FicoEXTScoređSimulacionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Respuesta',
+                        '\FicoEXTScoredSimulacion\Client\Model\Respuesta',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -99,7 +99,7 @@ class FicoEXTScoređSimulacionApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -107,7 +107,7 @@ class FicoEXTScoređSimulacionApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -115,7 +115,7 @@ class FicoEXTScoređSimulacionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -123,7 +123,7 @@ class FicoEXTScoređSimulacionApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -131,7 +131,7 @@ class FicoEXTScoređSimulacionApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -139,7 +139,7 @@ class FicoEXTScoređSimulacionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\FicoEXTScoređSimulacion\Client\Model\Errores',
+                        '\FicoEXTScoredSimulacion\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -161,7 +161,7 @@ class FicoEXTScoređSimulacionApi
     
     public function getReporteAsyncWithHttpInfo($x_api_key, $body)
     {
-        $returnType = '\FicoEXTScoređSimulacion\Client\Model\Respuesta';
+        $returnType = '\FicoEXTScoredSimulacion\Client\Model\Respuesta';
         $request = $this->getReporteRequest($x_api_key, $body);
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

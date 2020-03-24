@@ -1,9 +1,9 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
+namespace FicoEXTScoredSimulacion\Client\Model;
 
 use \ArrayAccess;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class Error implements ModelInterface, ArrayAccess
 {

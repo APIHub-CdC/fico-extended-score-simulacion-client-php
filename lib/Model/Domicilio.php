@@ -1,9 +1,9 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
+namespace FicoEXTScoredSimulacion\Client\Model;
 
 use \ArrayAccess;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class Domicilio implements ModelInterface, ArrayAccess
 {
@@ -16,12 +16,12 @@ class Domicilio implements ModelInterface, ArrayAccess
         'colonia_poblacion' => 'string',
         'delegacion_municipio' => 'string',
         'ciudad' => 'string',
-        'estado' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoEstados',
+        'estado' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoEstados',
         'cp' => 'string',
         'fecha_residencia' => 'string',
         'numero_telefono' => 'string',
-        'tipo_domicilio' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoTipoDomicilio',
-        'tipo_asentamiento' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoTipoAsentamiento',
+        'tipo_domicilio' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoTipoDomicilio',
+        'tipo_asentamiento' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoTipoAsentamiento',
         'fecha_registro_domicilio' => 'string',
         'tipo_alta_domicilio' => 'int',
         'id_domicilio' => 'string'

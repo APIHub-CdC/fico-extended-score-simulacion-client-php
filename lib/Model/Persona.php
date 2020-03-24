@@ -1,9 +1,9 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
+namespace FicoEXTScoredSimulacion\Client\Model;
 
 use \ArrayAccess;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class Persona implements ModelInterface, ArrayAccess
 {
@@ -20,13 +20,13 @@ class Persona implements ModelInterface, ArrayAccess
         'rfc' => 'string',
         'curp' => 'string',
         'nacionalidad' => 'string',
-        'residencia' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoResidencia',
-        'estado_civil' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoEstadoCivil',
-        'sexo' => '\FicoEXTScoređSimulacion\Client\Model\CatalogoSexo',
+        'residencia' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoResidencia',
+        'estado_civil' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoEstadoCivil',
+        'sexo' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoSexo',
         'clave_elector_ife' => 'string',
         'numero_dependientes' => 'int',
         'fecha_defuncion' => 'string',
-        'domicilio' => '\FicoEXTScoređSimulacion\Client\Model\Domicilio'
+        'domicilio' => '\FicoEXTScoredSimulacion\Client\Model\Domicilio'
     ];
     
     protected static $FicoEXTScoređFormats = [

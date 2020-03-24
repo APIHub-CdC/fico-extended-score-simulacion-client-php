@@ -1,10 +1,10 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client;
+namespace FicoEXTScoredSimulacion\Client;
 
-use \FicoEXTScoređSimulacion\Client\Configuration;
-use \FicoEXTScoređSimulacion\Client\ApiException;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\Configuration;
+use \FicoEXTScoredSimulacion\Client\ApiException;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class ApiTest extends \PHPUnit_Framework_TestCase
 {
@@ -12,21 +12,21 @@ class ApiTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $handler = \GuzzleHttp\HandlerStack::create();
-        $config = new \FicoEXTScoređSimulacion\Client\Configuration();
+        $config = new \FicoEXTScoredSimulacion\Client\Configuration();
         $config->setHost('the_url');
 
         $client = new \GuzzleHttp\Client(['handler' => $handler]);
-        $this->apiInstance = new \FicoEXTScoređSimulacion\Client\Api\FicoEXTScoređSimulacionApi($client, $config);
+        $this->apiInstance = new \FicoEXTScoredSimulacion\Client\Api\FicoEXTScoredSimulacionApi($client, $config);
 
         $this->x_api_key = "your_api_key";
     }    
     
 public function testGetReporte()
     {
-        $request = new \FicoEXTScoređSimulacion\Client\Model\Peticion();
-        $persona = new \FicoEXTScoređSimulacion\Client\Model\Persona();
-        $domicilio = new \FicoEXTScoređSimulacion\Client\Model\Domicilio();        
-        $estado = new \FicoEXTScoređSimulacion\Client\Model\CatalogoEstados();
+        $request = new \FicoEXTScoredSimulacion\Client\Model\Peticion();
+        $persona = new \FicoEXTScoredSimulacion\Client\Model\Persona();
+        $domicilio = new \FicoEXTScoredSimulacion\Client\Model\Domicilio();        
+        $estado = new \FicoEXTScoredSimulacion\Client\Model\CatalogoEstados();
             
         $domicilio->setDireccion("SAN JOAQUIN");
         $domicilio->setColoniaPoblacion("EL ARENAL");
@@ -67,7 +67,7 @@ public function testGetReporte()
 
             return $result->getFolioConsulta();
         } catch (Exception $e) {
-            echo 'Exception when calling FicoEXTScoređSimulacionApi->getReporte: ', $e->getMessage(), PHP_EOL;
+            echo 'Exception when calling FicoEXTScoredSimulacionApi->getReporte: ', $e->getMessage(), PHP_EOL;
         }
     } 
 }

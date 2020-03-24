@@ -1,7 +1,7 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+namespace FicoEXTScoredSimulacion\Client\Model;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class CatalogoEstadoCivil
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
+namespace FicoEXTScoredSimulacion\Client\Model;
 
 use \ArrayAccess;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class Errores implements ModelInterface, ArrayAccess
 {
@@ -12,7 +12,7 @@ class Errores implements ModelInterface, ArrayAccess
     protected static $FicoEXTScoređModelName = 'Errores';
     
     protected static $FicoEXTScoređTypes = [
-        'errores' => '\FicoEXTScoređSimulacion\Client\Model\Error[]'
+        'errores' => '\FicoEXTScoredSimulacion\Client\Model\Error[]'
     ];
     
     protected static $FicoEXTScoređFormats = [

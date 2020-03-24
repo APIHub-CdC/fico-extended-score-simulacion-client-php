@@ -1,9 +1,9 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client\Model;
+namespace FicoEXTScoredSimulacion\Client\Model;
 
 use \ArrayAccess;
-use \FicoEXTScoređSimulacion\Client\ObjectSerializer;
+use \FicoEXTScoredSimulacion\Client\ObjectSerializer;
 
 class Respuesta implements ModelInterface, ArrayAccess
 {
@@ -14,7 +14,7 @@ class Respuesta implements ModelInterface, ArrayAccess
     protected static $FicoEXTScoređTypes = [
         'folio_consulta' => 'string',
         'folio' => 'string',
-        'score' => '\FicoEXTScoređSimulacion\Client\Model\Score'
+        'score' => '\FicoEXTScoredSimulacion\Client\Model\Score'
     ];
     
     protected static $FicoEXTScoređFormats = [

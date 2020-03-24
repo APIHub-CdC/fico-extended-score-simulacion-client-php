@@ -1,6 +1,6 @@
 <?php
 
-namespace FicoEXTScoređSimulacion\Client;
+namespace FicoEXTScoredSimulacion\Client;
 
 class Configuration
 {
@@ -18,7 +18,7 @@ class Configuration
     
     protected $host = '';
     
-    protected $userAgent = 'FicoEXTScoređSimulacion-Codegen/1.0.0/php';
+    protected $userAgent = 'FicoEXTScoredSimulacion-Codegen/1.0.0/php';
     
     protected $debug = false;
     
@@ -159,7 +159,7 @@ class Configuration
     
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (FicoEXTScoređSimulacion\Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (FicoEXTScoredSimulacion\Client) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 2.0.0' . PHP_EOL;
