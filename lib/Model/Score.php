@@ -9,28 +9,28 @@ class Score implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Score';
+    protected static $FicoEXTScoredModelName = 'Score';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'nombre_score' => 'string',
         'valor' => 'int',
         'razones' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoRazones[]'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'nombre_score' => null,
         'valor' => 'int32',
         'razones' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -68,7 +68,7 @@ class Score implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     

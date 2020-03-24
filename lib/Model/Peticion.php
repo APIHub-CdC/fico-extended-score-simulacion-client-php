@@ -9,26 +9,26 @@ class Peticion implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Peticion';
+    protected static $FicoEXTScoredModelName = 'Peticion';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'folio' => 'string',
         'persona' => '\FicoEXTScoredSimulacion\Client\Model\Persona'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'folio' => null,
         'persona' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -63,7 +63,7 @@ class Peticion implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     

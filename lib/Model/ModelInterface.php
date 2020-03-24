@@ -7,9 +7,9 @@ interface ModelInterface
     
     public function getModelName();
     
-    public static function FicoEXTScoređTypes();
+    public static function FicoEXTScoredTypes();
     
-    public static function FicoEXTScoređFormats();
+    public static function FicoEXTScoredFormats();
     
     public static function attributeMap();
     

@@ -23,19 +23,19 @@ class ObjectSerializer
             return $data;
         } elseif (is_object($data)) {
             $values = [];
-            $formats = $data::FicoEXTScoređFormats();
-            foreach ($data::FicoEXTScoređTypes() as $property => $FicoEXTScoređType) {
+            $formats = $data::FicoEXTScoredFormats();
+            foreach ($data::FicoEXTScoredTypes() as $property => $FicoEXTScoredType) {
                 $getter = $data::getters()[$property];
                 $value = $data->$getter();
                 if ($value !== null
-                    && !in_array($FicoEXTScoređType, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)
-                    && method_exists($FicoEXTScoređType, 'getAllowableEnumValues')
-                    && !in_array($value, $FicoEXTScoređType::getAllowableEnumValues(), true)) {
-                    $imploded = implode("', '", $FicoEXTScoređType::getAllowableEnumValues());
-                    throw new \InvalidArgumentException("Invalid value for enum '$FicoEXTScoređType', must be one of: '$imploded'");
+                    && !in_array($FicoEXTScoredType, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)
+                    && method_exists($FicoEXTScoredType, 'getAllowableEnumValues')
+                    && !in_array($value, $FicoEXTScoredType::getAllowableEnumValues(), true)) {
+                    $imploded = implode("', '", $FicoEXTScoredType::getAllowableEnumValues());
+                    throw new \InvalidArgumentException("Invalid value for enum '$FicoEXTScoredType', must be one of: '$imploded'");
                 }
                 if ($value !== null) {
-                    $values[$data::attributeMap()[$property]] = self::sanitizeForSerialization($value, $FicoEXTScoređType, $formats[$property]);
+                    $values[$data::attributeMap()[$property]] = self::sanitizeForSerialization($value, $FicoEXTScoredType, $formats[$property]);
                 }
             }
             return (object)$values;
@@ -171,7 +171,7 @@ class ObjectSerializer
                 }
             }
             $instance = new $class();
-            foreach ($instance::FicoEXTScoređTypes() as $property => $type) {
+            foreach ($instance::FicoEXTScoredTypes() as $property => $type) {
                 $propertySetter = $instance::setters()[$property];
                 if (!isset($propertySetter) || !isset($data->{$instance::attributeMap()[$property]})) {
                     continue;

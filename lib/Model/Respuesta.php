@@ -9,28 +9,28 @@ class Respuesta implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Respuesta';
+    protected static $FicoEXTScoredModelName = 'Respuesta';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'folio_consulta' => 'string',
         'folio' => 'string',
         'score' => '\FicoEXTScoredSimulacion\Client\Model\Score'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'folio_consulta' => null,
         'folio' => null,
         'score' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -68,7 +68,7 @@ class Respuesta implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     

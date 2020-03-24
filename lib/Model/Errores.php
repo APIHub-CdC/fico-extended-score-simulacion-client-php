@@ -9,24 +9,24 @@ class Errores implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Errores';
+    protected static $FicoEXTScoredModelName = 'Errores';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'errores' => '\FicoEXTScoredSimulacion\Client\Model\Error[]'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'errores' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -58,7 +58,7 @@ class Errores implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     

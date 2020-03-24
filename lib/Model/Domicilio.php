@@ -9,9 +9,9 @@ class Domicilio implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Domicilio';
+    protected static $FicoEXTScoredModelName = 'Domicilio';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'direccion' => 'string',
         'colonia_poblacion' => 'string',
         'delegacion_municipio' => 'string',
@@ -27,7 +27,7 @@ class Domicilio implements ModelInterface, ArrayAccess
         'id_domicilio' => 'string'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'direccion' => null,
         'colonia_poblacion' => null,
         'delegacion_municipio' => null,
@@ -43,14 +43,14 @@ class Domicilio implements ModelInterface, ArrayAccess
         'id_domicilio' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -118,7 +118,7 @@ class Domicilio implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     

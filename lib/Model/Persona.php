@@ -9,9 +9,9 @@ class Persona implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $FicoEXTScoređModelName = 'Persona';
+    protected static $FicoEXTScoredModelName = 'Persona';
     
-    protected static $FicoEXTScoređTypes = [
+    protected static $FicoEXTScoredTypes = [
         'apellido_paterno' => 'string',
         'apellido_materno' => 'string',
         'apellido_adicional' => 'string',
@@ -29,7 +29,7 @@ class Persona implements ModelInterface, ArrayAccess
         'domicilio' => '\FicoEXTScoredSimulacion\Client\Model\Domicilio'
     ];
     
-    protected static $FicoEXTScoređFormats = [
+    protected static $FicoEXTScoredFormats = [
         'apellido_paterno' => null,
         'apellido_materno' => null,
         'apellido_adicional' => null,
@@ -47,14 +47,14 @@ class Persona implements ModelInterface, ArrayAccess
         'domicilio' => null
     ];
     
-    public static function FicoEXTScoređTypes()
+    public static function FicoEXTScoredTypes()
     {
-        return self::$FicoEXTScoređTypes;
+        return self::$FicoEXTScoredTypes;
     }
     
-    public static function FicoEXTScoređFormats()
+    public static function FicoEXTScoredFormats()
     {
-        return self::$FicoEXTScoređFormats;
+        return self::$FicoEXTScoredFormats;
     }
     
     protected static $attributeMap = [
@@ -128,7 +128,7 @@ class Persona implements ModelInterface, ArrayAccess
     
     public function getModelName()
     {
-        return self::$FicoEXTScoređModelName;
+        return self::$FicoEXTScoredModelName;
     }
     
     
