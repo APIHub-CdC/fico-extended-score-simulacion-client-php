@@ -14,7 +14,7 @@ class Score implements ModelInterface, ArrayAccess
     protected static $FicoEXTScoredTypes = [
         'nombre_score' => 'string',
         'valor' => 'int',
-        'razones' => '\FicoEXTScoredSimulacion\Client\Model\CatalogoRazones[]'
+        'razones' => 'string[]'
     ];
     
     protected static $FicoEXTScoredFormats = [
